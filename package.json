@@ -1,0 +1,23 @@
+{
+  "name": "linear-website",
+  "version": "1.0.0",
+  "description": "Website of Linear, a ruler application with web-design in mind.",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node-sass -w scss/index.scss index.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikaa123/linear-website.git"
+  },
+  "author": "Michael Sokol <misokol123@gmail.com> (http://sokolmichael.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mikaa123/linear-website/issues"
+  },
+  "homepage": "https://github.com/mikaa123/linear-website#readme",
+  "devDependencies": {
+    "node-sass": "^3.4.2",
+    "susy": "^2.2.9"
+  }
+}

@@ -1,0 +1,9 @@
+body {
+  color: red;
+  max-width: 80em;
+  margin-left: auto;
+  margin-right: auto; }
+  body:after {
+    content: " ";
+    display: block;
+    clear: both; }
