@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/mikaa123/linear-website#readme",
   "devDependencies": {
-    "node-sass": "^3.4.2",
-    "susy": "^2.2.9"
+    "node-sass": "^3.3.3",
+    "susy": "^2.2.6"
   }
 }

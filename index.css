@@ -1,9 +1,156 @@
 body {
-  color: red;
-  max-width: 80em;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans"; }
+
+a, a:visited {
+  color: #6A24FA;
+  text-decoration: none; }
+
+header {
+  max-width: 1300px;
+  font-family: "Raleway";
+  margin: 25px;
+  font-weight: 300;
+  position: relative; }
+  header h1 {
+    font-weight: 300;
+    margin-bottom: .25em;
+    font-size: 3.5em; }
+  header p {
+    margin: 2rem 0 3.125rem 0;
+    font-family: "Open Sans";
+    color: gray; }
+  header .by {
+    position: absolute;
+    right: 0;
+    top: 24px; }
+    header .by:before {
+      content: "By";
+      margin-right: 0.3em;
+      font-size: 0.8em; }
+    header .by svg {
+      width: 30px;
+      height: 30px;
+      vertical-align: middle; }
+  @media (min-width: 900px) {
+    header {
+      margin-left: 50px;
+      margin-right: 50px; }
+      header h1 {
+        font-size: 5em;
+        margin-top: 1.1em; }
+      header p {
+        font-size: 1.5em; }
+      header .by {
+        top: 38px; }
+        header .by:before {
+          content: "Made by";
+          margin-right: 0.5em; } }
+  @media (min-width: 1350px) {
+    header {
+      margin: 0 auto; } }
+
+.screenshot {
+  max-width: 1300px;
+  margin: 0 auto 3.125rem auto; }
+  .screenshot img {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block; }
+
+.features {
+  padding: 0 50px;
+  max-width: 1100px;
   margin-left: auto;
   margin-right: auto; }
-  body:after {
+  .features:after {
     content: " ";
     display: block;
     clear: both; }
+
+.feature {
+  clear: both;
+  max-width: 500px;
+  margin: 0 auto; }
+  .feature__inner--text {
+    display: inline-block; }
+    .feature__inner--text > h2 {
+      font-family: "Raleway";
+      font-weight: 600;
+      font-size: 1.4em; }
+    .feature__inner--text > p {
+      font-family: "Open Sans";
+      font-weight: 300;
+      color: gray;
+      font-size: 1.2em; }
+    @media (min-width: 750px) {
+      .feature__inner--text {
+        height: 225px; } }
+  @media (min-width: 750px) {
+    .feature {
+      max-width: inherit;
+      margin: inherit;
+      width: 47.05882%;
+      float: left; }
+      .feature:nth-child(2n + 1) {
+        margin-left: 0;
+        margin-right: -100%;
+        clear: both;
+        margin-left: 0; }
+      .feature:nth-child(2n + 2) {
+        margin-left: 52.94118%;
+        margin-right: -100%;
+        clear: none; } }
+  @media (min-width: 900px) {
+    .feature {
+      width: 29.41176%;
+      float: left; }
+      .feature:nth-child(3n + 1) {
+        margin-left: 0;
+        margin-right: -100%;
+        clear: both;
+        margin-left: 0; }
+      .feature:nth-child(3n + 2) {
+        margin-left: 35.29412%;
+        margin-right: -100%;
+        clear: none; }
+      .feature:nth-child(3n + 3) {
+        margin-left: 70.58824%;
+        margin-right: -100%;
+        clear: none; } }
+
+footer {
+  margin: 25px;
+  margin-top: 5em;
+  text-align: center;
+  color: gray;
+  clear: both; }
+  footer .heart {
+    color: #6A24FA; }
+  footer nav {
+    margin-bottom: .5em; }
+    footer nav span + span:before {
+      content: " | "; }
+
+.download {
+  max-width: 1300px;
+  text-align: center;
+  margin: 3.125rem auto; }
+  .download .download-btn {
+    background-color: #6A24FA;
+    width: 50%;
+    padding: 1em 2em;
+    color: white;
+    cursor: pointer;
+    display: inline-block; }
+  .download .download-btn--gh {
+    background-color: #282C35; }
+  .download .download-btn + .download-btn {
+    margin-top: 1em; }
+  @media (min-width: 500px) {
+    .download .download-btn {
+      width: inherit; }
+    .download .download-btn + .download-btn {
+      margin-top: 0em;
+      margin-left: 1em; } }

@@ -1,6 +1,188 @@
 @import "node_modules/susy/sass/susy";
 
+$susy: (
+	gutters: 2
+);
+
+$max-width: 1300px;
+$headline-font: "Raleway";
+$body-font: "Open Sans";
+
 body {
-	color: red;
-	@include container(80em);
+	margin: 0;
+	padding: 0;
+	font-family: $body-font;
+}
+
+a, a:visited {
+	color: #6A24FA;
+	text-decoration: none;
+}
+
+header {
+	max-width: $max-width;
+	font-family: $headline-font;
+	margin: 25px;
+	font-weight: 300;
+	position: relative;
+
+	h1 {
+		font-weight: 300;
+		margin-bottom: .25em;
+		font-size: 3.5em;
+	}
+
+	p {
+		margin: 2rem 0 3.125rem 0;
+		font-family: "Open Sans";
+		color: gray;
+	}
+
+	.by {
+		position: absolute;
+		right: 0;
+		top: 24px;
+
+		&:before {
+			content: "By";
+			margin-right: 0.3em;
+			font-size: 0.8em;
+		}
+
+		svg {
+			width: 30px;
+			height: 30px;
+			vertical-align: middle;
+		}
+	}
+	@include susy-breakpoint(900px) {
+		margin-left: 50px;
+		margin-right: 50px;
+
+		h1 {
+			font-size: 5em;
+			margin-top: 1.1em;
+		}
+		p {
+			font-size: 1.5em;
+		}
+
+		.by {
+			top: 38px;
+			&:before {
+				content: "Made by";
+				margin-right: 0.5em;
+			}
+		}
+	}
+
+	@include susy-breakpoint(1350px) {
+		margin: 0 auto;
+	}
+}
+
+.screenshot {
+	max-width: $max-width;
+	margin:0 auto 3.125rem auto;
+
+	img {
+		max-width: 100%;
+		margin: 0 auto;
+		display: block;
+	}
+}
+
+.features {
+	padding: 0 50px;
+	@include container(1100px);
+}
+
+.feature {
+	clear: both;
+	max-width: 500px;
+	margin: 0 auto;
+
+	&__inner--text {
+		display: inline-block;
+
+		& > h2 {
+			font-family: $headline-font;
+			font-weight: 600;
+			font-size: 1.4em;
+		}
+
+		& > p {
+			font-family: $body-font;
+			font-weight: 300;
+			color: gray;
+			font-size: 1.2em;
+		}
+
+		@include susy-breakpoint(750px, 12) {
+			height: 225px;
+		}
+	}
+
+	@include susy-breakpoint(750px, 12) {
+		max-width: inherit;
+		margin: inherit;
+		@include gallery(6);
+	}
+
+	@include susy-breakpoint(900px, 12) {
+		@include gallery(4);
+	}
+}
+
+footer {
+	margin: 25px;
+	margin-top: 5em;
+	text-align: center;
+	color: gray;
+	clear: both;
+
+	.heart {
+		color: #6A24FA;
+	}
+	nav {
+		margin-bottom: .5em;
+
+		span + span:before {
+			content: " | ";
+		}
+	}
+}
+
+.download {
+	max-width: $max-width;
+	text-align: center;
+	margin: 3.125rem auto;
+
+  .download-btn {
+    background-color: #6A24FA;
+    width: 50%;
+    padding: 1em 2em;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  .download-btn--gh {
+    background-color: #282C35;
+  }
+
+  .download-btn + .download-btn {
+    margin-top: 1em;
+  }
+
+  @include susy-breakpoint(500px) {
+    .download-btn {
+      width: inherit;
+    }
+
+    .download-btn + .download-btn {
+      margin-top: 0em;
+      margin-left: 1em;
+    }
+  }
 }

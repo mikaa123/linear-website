@@ -1,45 +1,124 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>title</title>
+	<title>Linear App</title>
+	<meta name="viewport" content="width=device-width">
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600|Open+Sans:400,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="index.css" media="screen" charset="utf-8">
+	<link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96">
+
 </head>
 <body>
 	<header>
 		<h1>Linear</h1>
-		<p>Ruler application with web-development in mind.</p>
+		<p>Free, open-source ruler app for mac with web-development in mind.</p>
+		<a href="http://www.theuxshop.com" target="_blank">
+			<div class="by">
+				<svg viewBox="0 0 166 166"	version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+					<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							<g>
+									<g>
+											<g >
+													<g>
+															<circle id="Oval-1" fill="#6A24FA" cx="83" cy="83" r="83"></circle>
+															<path d="M113.005,25.04 L97.605,25.04 L97.605,73.77 C97.605,77.62 96.175,81.14 93.425,83.89 C90.675,86.64 87.155,88.07 83.305,88.07 C79.455,88.07 75.825,86.64 73.075,83.89 C70.325,81.14 68.785,77.51 68.785,73.66 L68.785,25.04 L53.385,25.04 L53.385,73.77 C53.495,90.16 66.805,103.47 83.305,103.47 C99.695,103.47 113.115,90.16 113.115,73.66 L113.005,25.04 L113.005,25.04 Z" id="U" fill="#FFFFFF"></path>
+															<path d="M85.1200012,92.5804687 L83,89.15 L80.9207825,92.5804687 L73.54,102.46 L46.15,140.96 L65.07,140.96 L83,115.77 L100.93,140.96 L119.85,140.96 L92.46,102.46 L85.1200012,92.5804687 L85.1200012,92.5804687 Z" id="Type-something" fill="#FFFFFF"></path>
+															<circle id="Oval-2" fill="#FFFFFF" cx="83" cy="73" r="11"></circle>
+													</g>
+											</g>
+									</g>
+							</g>
+					</g>
+				</svg>
+			</div>
+		</a>
 	</header>
 
-	<section class="screenshot"></section>
+	<section class="screenshot">
+		<img src="images/screenshot.png"/>
+	</section>
+
+	<section class="download">
+		<div class="download-btn">
+			<div class="download-btn__text">
+				Download for Mac
+			</div>
+		</div>
+
+		<div class="download-btn download-btn--gh">
+			<div class="download-btn__text">
+				View on Github
+			</div>
+		</div>
+	</section>
 
 	<section class="features">
 
 		<div class="feature">
-			<div class="feature__inner">
-				<!-- Some cool gif here -->
+			<div class="feature__inner feature__inner--text">
+				<h2>Choose your unit</h2>
+				<p>Working in CSS often means using EM for components. It is possible to switch
+				between both PX and EM, and to change the base font value.</p>
 			</div>
+		</div>
 
-			<div class="feature__inner">
-				<h2>Awesome feature</h2>
+		<div class="feature">
+			<div class="feature__inner feature__inner--text">
+				<h2>Works with devtools open</h2>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum lacus a mi iaculis, eu molestie neque semper. Duis metus lacus, rhoncus ut libero sed,
+					Linear isn't a browser extension, so it doesn't add a CSS overlay to your page.
+					It's super easy to have rulers open while tweaking values in the inspector.
 				</p>
 			</div>
 		</div>
 
 		<div class="feature">
-			<div class="feature__inner">
-				<!-- Some cool gif here -->
-			</div>
-
-			<div class="feature__inner">
-				<h2>Awesome feature</h2>
+			<div class="feature__inner feature__inner--text">
+				<h2>Duplicate rulers</h2>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum lacus a mi iaculis, eu molestie neque semper. Duis metus lacus, rhoncus ut libero sed,
+					Get the proportions right once, then copy the rulers to make sure your
+					margins are correct.
+				</p>
+			</div>
+		</div>
+
+		<div class="feature">
+			<div class="feature__inner feature__inner--text">
+				<h2>Show and hide rulers</h2>
+				<p>
+					Toggle rulers using a global shortcut.
+				</p>
+			</div>
+		</div>
+
+		<div class="feature">
+			<div class="feature__inner feature__inner--text">
+				<h2>Dark and light</h2>
+				<p>
+					Working on a white background? Juste change the theme of the ruler.
+				</p>
+			</div>
+		</div>
+
+		<div class="feature">
+			<div class="feature__inner feature__inner--text">
+				<h2>Multiple rulers</h2>
+				<p>
+					Create as many rulers to make sure all your elements are aligned correctly.
 				</p>
 			</div>
 		</div>
 
 	</section>
+
+	<footer>
+		<nav>
+			<span><a href="https://github.com/mikaa123/linear-website">Github</a></span>
+			<span><a href="https://twitter.com/theuxshop">Twitter</a></span>
+		</nav>
+		<div class="made">Crafted with <span class="heart">❤</span> by <a href="http://www.theuxshop.com">The UX Shop</a></div>
+	</footer>
 </body>
 </html>
