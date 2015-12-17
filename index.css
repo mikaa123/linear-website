@@ -41,6 +41,7 @@ header {
         font-size: 5em;
         margin-top: 1.1em; }
       header p {
+        margin: 2rem 0 5.125rem 0;
         font-size: 1.5em; }
       header .by {
         top: 38px; }
@@ -154,3 +155,6 @@ footer {
     .download .download-btn + .download-btn {
       margin-top: 0em;
       margin-left: 1em; } }
+  @media (min-width: 900px) {
+    .download {
+      margin: 5.125rem auto; } }

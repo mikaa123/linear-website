@@ -63,7 +63,9 @@ header {
 			font-size: 5em;
 			margin-top: 1.1em;
 		}
+
 		p {
+			margin: 2rem 0 5.125rem 0;
 			font-size: 1.5em;
 		}
 
@@ -158,31 +160,35 @@ footer {
 	text-align: center;
 	margin: 3.125rem auto;
 
-  .download-btn {
-    background-color: #6A24FA;
-    width: 50%;
-    padding: 1em 2em;
-    color: white;
-    cursor: pointer;
-    display: inline-block;
-  }
+	.download-btn {
+		background-color: #6A24FA;
+		width: 50%;
+		padding: 1em 2em;
+		color: white;
+		cursor: pointer;
+		display: inline-block;
+	}
 
-  .download-btn--gh {
-    background-color: #282C35;
-  }
+	.download-btn--gh {
+		background-color: #282C35;
+	}
 
-  .download-btn + .download-btn {
-    margin-top: 1em;
-  }
+	.download-btn +	.download-btn {
+		margin-top: 1em;
+	}
 
-  @include susy-breakpoint(500px) {
-    .download-btn {
-      width: inherit;
-    }
+	@include susy-breakpoint(500px) {
+		.download-btn {
+			width: inherit;
+		}
 
-    .download-btn + .download-btn {
-      margin-top: 0em;
-      margin-left: 1em;
-    }
-  }
+		.download-btn + .download-btn {
+			margin-top: 0em;
+			margin-left: 1em;
+		}
+	}
+
+	@include susy-breakpoint(900px) {
+		margin: 5.125rem auto;
+	}
 }
